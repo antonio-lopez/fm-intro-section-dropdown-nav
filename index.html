@@ -22,26 +22,35 @@
     <!-- navbar mobile -->
     <nav class="mx-auto flex items-center justify-between px-4 pt-4 pb-6">
       <img src="/images/logo.svg" alt="logo" />
-      <img class="h-5 w-8" src="/images/icon-menu.svg" alt="menu icon" />
+      <img
+        id="hamburger-open"
+        class="h-5 w-8"
+        src="/images/icon-menu.svg"
+        alt="menu icon"
+      />
       <!-- mobile menu -->
       <div
         id="menu"
-        class="absolute left-28 right-0 top-0 h-screen bg-almostWhite px-4 pt-5"
+        class="absolute left-28 right-0 top-0 hidden h-screen bg-almostWhite px-4 pt-5"
       >
         <div class="flex justify-end pb-8">
-          <img src="/images/icon-close-menu.svg" alt="close menu icon" />
+          <img
+            id="hamburger-close"
+            src="/images/icon-close-menu.svg"
+            alt="close menu icon"
+          />
         </div>
         <ul class="space-y-4 text-sm text-mediumGray">
           <!-- features drop down -->
           <li>
-            <a class="flex" href=""
+            <a id="features" class="flex" href=""
               >Features
               <div class="flex items-center pl-3">
                 <img src="/images/icon-arrow-down.svg" alt="arrow down icon" />
               </div>
             </a>
             <!-- features list -->
-            <ul class="space-y-3 pt-7 pb-2 pl-5">
+            <ul id="features-list" class="hidden space-y-3 pt-7 pb-2 pl-5">
               <li>
                 <a class="flex" href=""
                   ><div class="pr-2">
@@ -82,14 +91,14 @@
           </li>
           <!-- company drop down -->
           <li>
-            <a class="flex" href=""
+            <a id="company" class="flex" href=""
               >Company
               <div class="flex items-center pl-3">
                 <img src="/images/icon-arrow-down.svg" alt="arrow down icon" />
               </div>
             </a>
             <!-- company list -->
-            <ul class="space-y-5 pl-5 pt-5 pb-2">
+            <ul id="company-list" class="hidden space-y-5 pl-5 pt-5 pb-2">
               <li><a href="">History</a></li>
               <li><a href="">Our Team</a></li>
               <li><a href="">Blog</a></li>
@@ -143,5 +152,6 @@
         </div>
       </div>
     </main>
+    <script src="/js/script.js"></script>
   </body>
 </html>
