@@ -21,9 +21,43 @@
   <body class="bg-almostWhite">
     <!-- navbar mobile -->
     <nav class="mx-auto flex items-center justify-between px-4 pt-4 pb-6">
-      <!-- <h1 class="text-4xl font-bold">snap</h1> -->
       <img src="/images/logo.svg" alt="logo" />
       <img class="h-5 w-8" src="/images/icon-menu.svg" alt="menu icon" />
+      <!-- mobile menu -->
+      <div
+        id="menu"
+        class="absolute left-28 right-0 top-0 h-screen bg-almostWhite px-4 pt-5"
+      >
+        <div class="flex justify-end pb-8">
+          <img src="/images/icon-close-menu.svg" alt="close menu icon" />
+        </div>
+        <ul class="space-y-4 text-sm text-mediumGray">
+          <li class="flex">
+            <a href="/#">Features</a>
+            <div class="flex items-center pl-3">
+              <img src="/images/icon-arrow-down.svg" alt="arrow down icon" />
+            </div>
+          </li>
+          <li class="flex">
+            <a href="/#">Company</a>
+            <div class="flex items-center pl-3">
+              <img src="/images/icon-arrow-down.svg" alt="arrow down icon" />
+            </div>
+          </li>
+          <li>
+            <a href="/#">Careers</a>
+          </li>
+          <li>
+            <a href="/#">About</a>
+          </li>
+          <li class="py-2 px-4 text-center">
+            <a href="/#">Login</a>
+          </li>
+          <li class="rounded-xl py-2 px-4 text-center outline outline-1">
+            <a href="/#">Register</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Main -->
@@ -31,9 +65,9 @@
       <!-- hero image -->
       <img src="/images/image-hero-mobile.png" alt="hero mobile" />
       <!-- hero text -->
-      <div class="pt-12 text-center">
-        <h1 class="pb-4 text-4xl font-bold">Make remote work</h1>
-        <p class="px-3 pb-9 text-mediumGray">
+      <div class="pt-10 text-center">
+        <h1 class="pb-4 text-3xl font-bold">Make remote work</h1>
+        <p class="px-3 pb-9 text-sm text-mediumGray">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
@@ -44,7 +78,7 @@
         >
       </div>
       <!-- company logos -->
-      <div class="grid grid-cols-4 items-center gap-5 px-4 pt-14">
+      <div class="mx-auto grid grid-cols-4 items-center gap-5 px-4 pt-14">
         <div>
           <img src="/images/client-databiz.svg" alt="databiz client" />
         </div>
