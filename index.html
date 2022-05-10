@@ -20,11 +20,13 @@
   </head>
   <body class="bg-almostWhite">
     <!-- navbar mobile -->
-    <nav class="mx-auto flex items-center justify-between px-4 pt-4 pb-6">
-      <img src="/images/logo.svg" alt="logo" />
+    <nav
+      class="mx-auto flex max-w-screen-2xl items-center justify-between px-4 pt-4 pb-6 lg:px-8 lg:pt-8"
+    >
+      <img class="lg:pr-14" src="/images/logo.svg" alt="logo" />
       <img
         id="hamburger-open"
-        class="h-5 w-8"
+        class="h-5 w-8 lg:hidden"
         src="/images/icon-menu.svg"
         alt="menu icon"
       />
@@ -118,6 +120,43 @@
             <a href="">Register</a>
           </li>
         </ul>
+      </div>
+
+      <!-- desktop menu -->
+      <div class="hidden w-full justify-between text-mediumGray lg:flex">
+        <!-- menu -->
+        <div>
+          <ul class="flex space-x-8">
+            <li>
+              <a class="flex" href=""
+                >Features
+                <div class="flex items-center pl-1">
+                  <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="arrow down icon"
+                  /></div
+              ></a>
+            </li>
+            <li>
+              <a class="flex" href=""
+                >Company
+                <div class="flex items-center pl-1">
+                  <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="arrow down icon"
+                  /></div
+              ></a>
+            </li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="space-x-3">
+          <a class="py-2 px-4 text-center" href="">Login</a>
+          <a class="rounded-lg py-2 px-3 text-center outline outline-1" href=""
+            >Register</a
+          >
+        </div>
       </div>
     </nav>
 
