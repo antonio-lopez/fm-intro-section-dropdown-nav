@@ -127,7 +127,7 @@
         <!-- menu -->
         <div>
           <ul class="flex space-x-8">
-            <li>
+            <li class="relative">
               <a class="flex hover:text-almostBlack" href=""
                 >Features
                 <div class="flex items-center pl-1">
@@ -136,8 +136,57 @@
                     alt="arrow down icon"
                   /></div
               ></a>
+
+              <!-- features list desktop-->
+              <div
+                class="absolute -left-16 flex flex-col items-center rounded-xl bg-white py-4 px-6 text-sm shadow-2xl"
+              >
+                <ul id="features-list-desktop" class="space-y-3">
+                  <li>
+                    <a class="flex" href=""
+                      ><div class="pr-2">
+                        <img src="/images/icon-todo.svg" alt="todo icon" />
+                      </div>
+                      Todo List</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex" href=""
+                      ><div class="pr-2">
+                        <img
+                          src="/images/icon-calendar.svg"
+                          alt="calendar icon"
+                        />
+                      </div>
+                      Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex" href=""
+                      ><div class="pr-2">
+                        <img
+                          src="/images/icon-reminders.svg"
+                          alt="reminders icon"
+                        />
+                      </div>
+                      Reminders</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex" href=""
+                      ><div class="pr-2">
+                        <img
+                          src="/images/icon-planning.svg"
+                          alt="planning icon"
+                        />
+                      </div>
+                      Planning</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
+            <li class="relative">
               <a class="flex hover:text-almostBlack" href=""
                 >Company
                 <div class="flex items-center pl-1">
@@ -146,6 +195,16 @@
                     alt="arrow down icon"
                   /></div
               ></a>
+              <!-- company list desktop -->
+              <div
+                class="absolute left-0 -right-6 flex flex-col items-center rounded-xl bg-white py-4 text-center text-sm shadow-2xl"
+              >
+                <ul id="company-list-desktop" class="space-y-3">
+                  <li><a href="">History</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Blog</a></li>
+                </ul>
+              </div>
             </li>
             <li><a class="hover:text-almostBlack" href="">Careers</a></li>
             <li><a class="hover:text-almostBlack" href="">About</a></li>
