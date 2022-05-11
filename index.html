@@ -161,33 +161,58 @@
     </nav>
 
     <!-- Main -->
-    <main class="grid grid-cols-1">
+    <main
+      class="grid grid-cols-1 lg:mx-auto lg:max-w-5xl lg:grid-cols-2 lg:pt-10"
+    >
       <!-- hero image -->
-      <img src="/images/image-hero-mobile.png" alt="hero mobile" />
+      <div class="lg:col-start-2 lg:pl-20">
+        <img
+          class="lg:hidden"
+          src="/images/image-hero-mobile.png"
+          alt="hero mobile"
+        />
+        <img
+          class="hidden lg:block"
+          src="/images/image-hero-desktop.png"
+          alt="hero desktop"
+        />
+      </div>
       <!-- hero text -->
-      <div class="pt-10 text-center">
-        <h1 class="pb-4 text-3xl font-bold">Make remote work</h1>
-        <p class="px-3 pb-9 text-sm text-mediumGray">
+      <div
+        class="pt-10 text-center lg:row-start-1 lg:flex lg:flex-col lg:justify-end lg:pr-6 lg:text-left"
+      >
+        <h1 class="pb-4 text-3xl font-bold lg:pb-10 lg:text-7xl">
+          Make remote work
+        </h1>
+        <p
+          class="px-3 pb-9 text-sm text-mediumGray lg:px-0 lg:pr-16 lg:pb-16 lg:text-base"
+        >
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a class="rounded-xl bg-almostBlack py-4 px-6 text-almostWhite" href=""
-          >Learn more</a
+        <div>
+          <a
+            class="rounded-xl bg-almostBlack py-4 px-6 text-almostWhite"
+            href=""
+            >Learn more</a
+          >
+        </div>
+        <!-- company logos -->
+        <div
+          class="mx-auto grid grid-cols-4 items-center gap-5 px-4 pt-14 lg:mx-0 lg:px-0 lg:pt-28"
         >
-      </div>
-      <!-- company logos -->
-      <div class="mx-auto grid grid-cols-4 items-center gap-5 px-4 pt-14">
-        <div>
-          <img src="/images/client-databiz.svg" alt="databiz client" />
-        </div>
-        <div>
-          <img src="/images/client-audiophile.svg" alt="audiophile client" />
-        </div>
-        <div>
-          <img src="/images/client-meet.svg" alt="meet client" />
-        </div>
-        <div>
-          <img src="/images/client-maker.svg" alt="maker client" />
+          <div>
+            <img src="/images/client-databiz.svg" alt="databiz client" />
+          </div>
+          <div>
+            <img src="/images/client-audiophile.svg" alt="audiophile client" />
+          </div>
+          <div>
+            <img src="/images/client-meet.svg" alt="meet client" />
+          </div>
+          <div>
+            <img src="/images/client-maker.svg" alt="maker client" />
+          </div>
         </div>
       </div>
     </main>
