@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/intro-section-dropdown-navigation-using-tailwind-css-rk6n50YL9)
+- [Live Site](https://antonio-intro-section-dropdown-nav.netlify.app/)
 
 ## My process
 
